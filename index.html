@@ -8,7 +8,7 @@
 <!-- ضع كود بكسل ميتا هنا -->
 <style>
 :root{--maroon:#5a0f14;--gold:#e8a317;--gold2:#ffd36b;--cream:#fff8ea;--ink:#2a1a14;--green:#1f9d55}
-*{box-sizing:border-box;margin:0}
+*{box-sizing:border-box;margin:0}html,body{overflow-x:hidden;max-width:100%}
 body{font-family:Tajawal,Tahoma,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;padding-bottom:76px}
 img{max-width:100%;display:block}
 .bar{position:sticky;top:0;z-index:20;background:var(--maroon);color:#fff;text-align:center;padding:8px 10px;font-weight:700;font-size:14px}
@@ -49,7 +49,7 @@ input:focus,textarea:focus{outline:0;border-color:var(--gold)}
 .cod{background:#e9f8ef;color:#126b38;border-radius:12px;padding:8px 12px;font-weight:700;font-size:14px;margin:12px 0}
 .total{display:flex;justify-content:space-between;font-weight:900;font-size:18px;margin:10px 0}
 .err{color:#c0262d;font-size:13px;min-height:18px}
-.hp{position:absolute;left:-9999px}
+.hp{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none}
 details{background:#fff;border-radius:12px;padding:10px 14px;margin-bottom:8px}
 summary{font-weight:700;cursor:pointer}
 .note{font-size:12px;color:#7a6a60;text-align:center;padding:0 16px 20px}
