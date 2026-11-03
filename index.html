@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فوريفر بي بولن | مكمل غذائي طبيعي</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- ضع كود بكسل ميتا هنا -->
+<style>
+:root{--maroon:#5a0f14;--gold:#e8a317;--gold2:#ffd36b;--cream:#fff8ea;--ink:#2a1a14;--green:#1f9d55}
+*{box-sizing:border-box;margin:0}
+body{font-family:Tajawal,Tahoma,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;padding-bottom:76px}
+img{max-width:100%;display:block}
+.bar{position:sticky;top:0;z-index:20;background:var(--maroon);color:#fff;text-align:center;padding:8px 10px;font-weight:700;font-size:14px}
+.bar b{color:var(--gold2);font-size:17px;letter-spacing:1px;direction:ltr;display:inline-block}
+.hero{background:linear-gradient(160deg,var(--maroon),#2b0509);color:#fff;padding:24px 16px 30px;text-align:center}
+.hero h1{font-size:27px;font-weight:900;line-height:1.4}
+.hero h1 span{color:var(--gold2)}
+.hero p{opacity:.9;margin:8px 0 14px}
+.hero img{width:78%;max-width:300px;margin:0 auto;border-radius:20px;box-shadow:0 12px 30px #0006}
+.price{margin:16px auto 0;display:inline-block;background:#fff1;border:2px dashed var(--gold2);border-radius:16px;padding:8px 22px}
+.price s{opacity:.6;margin-inline-end:8px}
+.price b{font-size:38px;color:var(--gold2)}
+.btn{display:block;width:100%;border:0;border-radius:14px;background:linear-gradient(var(--gold2),var(--gold));color:var(--maroon);font:900 20px Tajawal;padding:14px;cursor:pointer;text-align:center;text-decoration:none;box-shadow:0 6px 0 #b97d0c}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #b97d0c}
+.hero .btn{max-width:340px;margin:16px auto 0}
+section{padding:26px 16px}
+h2{text-align:center;font-size:23px;font-weight:900;color:var(--maroon);margin-bottom:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:#fff;border-radius:16px;padding:14px 10px;text-align:center;box-shadow:0 3px 12px #0001}
+.card i{font-style:normal;font-size:32px;display:block}
+.card b{display:block;font-size:15px}
+.card small{color:#6b5a50}
+.steps{display:flex;gap:10px}
+.step{flex:1;background:var(--maroon);color:#fff;border-radius:16px;padding:14px;text-align:center}
+.step i{font-style:normal;font-size:34px;display:block}
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory}
+.gal img{width:78%;flex:none;border-radius:16px;scroll-snap-align:center}
+.pk{display:block;position:relative;background:#fff;border:3px solid #eadfc9;border-radius:16px;padding:14px;margin-bottom:10px;cursor:pointer}
+.pk input{position:absolute;opacity:0}
+.pk:has(input:checked){border-color:var(--gold);background:#fff6dc}
+.pk div{display:flex;justify-content:space-between;align-items:center;font-weight:700}
+.pk em{font-style:normal;font-size:22px;font-weight:900;color:var(--maroon)}
+.tag{position:absolute;top:-11px;left:12px;background:var(--green);color:#fff;font-size:12px;font-weight:700;border-radius:20px;padding:1px 10px}
+form{background:#fff;border-radius:20px;padding:16px;box-shadow:0 6px 20px #0002}
+label{display:block;font-weight:700;margin:10px 0 4px;font-size:14px}
+input[type=text],input[type=tel],textarea,select{width:100%;font:16px Tajawal;padding:12px;border:2px solid #e3d8c3;border-radius:12px;background:#fffdf8}
+input:focus,textarea:focus{outline:0;border-color:var(--gold)}
+.cod{background:#e9f8ef;color:#126b38;border-radius:12px;padding:8px 12px;font-weight:700;font-size:14px;margin:12px 0}
+.total{display:flex;justify-content:space-between;font-weight:900;font-size:18px;margin:10px 0}
+.err{color:#c0262d;font-size:13px;min-height:18px}
+.hp{position:absolute;left:-9999px}
+details{background:#fff;border-radius:12px;padding:10px 14px;margin-bottom:8px}
+summary{font-weight:700;cursor:pointer}
+.note{font-size:12px;color:#7a6a60;text-align:center;padding:0 16px 20px}
+.fix{position:fixed;bottom:0;inset-inline:0;background:#fff;padding:10px 14px;box-shadow:0 -4px 16px #0003;z-index:30}
+.ok{display:none;text-align:center;padding:30px 16px}
+.ok h2{color:var(--green)}
+</style>
+</head>
+<body>
+
+<div class="bar">🔥 العرض ينتهي بعد <b id="t">00:00:00</b></div>
+
+<header class="hero">
+  <h1>فوريفر <span>بي بولن</span><br>مكمل غذائي طبيعي لدعم الشهية والنشاط</h1>
+  <p>١٠٠ حبة تكفي ٥٠ يوم · الدفع عند الاستلام · توصيل لجميع مناطق المملكة</p>
+  <img src="images/p2.jpg" alt="فوريفر بي بولن">
+  <div class="price"><s>٢٢٠ ريال</s><b>180</b> ريال <small>شامل التوصيل</small></div>
+  <a href="#order" class="btn">اطلب الآن وادفع عند الاستلام</a>
+</header>
+
+<section>
+  <h2>ليش فوريفر بي بولن؟</h2>
+  <div class="grid">
+    <div class="card"><i>🍽️</i><b>يدعم الشهية</b><small>يساعدك تستمتع بأكلك</small></div>
+    <div class="card"><i>⚡</i><b>يعزز النشاط</b><small>طاقة وحيوية طول اليوم</small></div>
+    <div class="card"><i>🛡️</i><b>يدعم المناعة</b><small>غذاء متكامل لجسمك</small></div>
+    <div class="card"><i>🌿</i><b>مكونه طبيعي</b><small>مكمل غذائي من فوريفر</small></div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <h2>طريقة الاستخدام</h2>
+  <div class="steps">
+    <div class="step"><i>☀️</i>حبة الصباح<br><small>بعد الأكل</small></div>
+    <div class="step"><i>🌙</i>حبة المساء<br><small>بعد الأكل</small></div>
+  </div>
+  <p style="text-align:center;margin-top:12px;font-weight:700">العبوة فيها 100 حبة = كورس 50 يوم</p>
+</section>
+
+<section>
+  <h2>صور المنتج</h2>
+  <div class="gal"><img src="images/p1.jpg" alt=""><img src="images/p3.jpg" alt=""><img src="images/p2.jpg" alt=""></div>
+</section>
+
+<section id="order" style="background:#fff6dc">
+  <h2>اطلب الحين · الدفع عند الاستلام</h2>
+  <form id="f" novalidate>
+    <label class="pk"><input type="radio" name="pkg" value="1" checked><div><span>عبوة واحدة</span><em>180 ر.س</em></div></label>
+    <label class="pk"><span class="tag">الأوفر ⭐</span><input type="radio" name="pkg" value="2"><div><span>عبوتين (كورس 100 يوم)</span><em>270 ر.س</em></div></label>
+
+    <label for="n">الاسم</label><input type="text" id="n" name="name" autocomplete="name" placeholder="اسمك الكريم">
+    <label for="p">رقم الجوال</label><input type="tel" id="p" name="phone" inputmode="numeric" autocomplete="tel" placeholder="05xxxxxxxx" maxlength="14">
+    <label for="c">المدينة</label>
+    <select id="c" name="city"><option value="">اختر المدينة</option><option>الرياض</option><option>جدة</option><option>مكة المكرمة</option><option>المدينة المنورة</option><option>الدمام</option><option>الخبر</option><option>الظهران</option><option>الطائف</option><option>أبها</option><option>خميس مشيط</option><option>تبوك</option><option>بريدة</option><option>حائل</option><option>جازان</option><option>نجران</option><option>الأحساء</option><option>ينبع</option><option>أخرى</option></select>
+    <label for="a">العنوان (الحي والشارع)</label><textarea id="a" name="address" rows="2" placeholder="الحي، الشارع، أقرب معلم"></textarea>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off">
+
+    <div class="cod">💵 الدفع عند الاستلام · التوصيل مشمول في السعر</div>
+    <div class="total"><span>الإجمالي</span><span id="tot">180 ر.س</span></div>
+    <div class="err" id="err"></div>
+    <button class="btn" id="go" type="submit">تأكيد الطلب</button>
+  </form>
+  <div class="ok" id="ok"><h2>✅ وصلنا طلبك!</h2><p>بنتواصل معك على جوالك قريب لتأكيد الطلب والتوصيل. شكراً لثقتك.</p></div>
+</section>
+
+<section>
+  <h2>أسئلة شائعة</h2>
+  <details><summary>كم مدة التوصيل؟</summary><p>التوصيل لجميع مناطق المملكة، ونتواصل معك بعد الطلب لتأكيد الموعد.</p></details>
+  <details><summary>كيف أدفع؟</summary><p>الدفع عند الاستلام نقداً، ما تدفع شي قبل ما يوصلك المنتج.</p></details>
+  <details><summary>كم تكفي العبوة؟</summary><p>العبوة 100 حبة، بحبة صباحاً وحبة مساءً تكفي 50 يوم.</p></details>
+  <details><summary>مين ما يناسبه المنتج؟</summary><p>منتج من حبوب لقاح النحل، فإذا عندك حساسية من منتجات النحل أو حامل أو مرضع أو عندك حالة صحية، استشر طبيبك قبل الاستخدام.</p></details>
+</section>
+
+<p class="note">هذا المنتج مكمل غذائي وليس دواءً ولا يغني عن نظام غذائي متنوع. النتائج تختلف من شخص لآخر. استشر طبيبك قبل الاستخدام.</p>
+
+<div class="fix"><a href="#order" class="btn">اطلب الآن · 180 ريال</a></div>
+
+<script>
+// ===== الإعدادات =====
+const ENDPOINT='/api/order';
+// ===== العداد: ينتهي منتصف الليل بتوقيت السعودية ويتجدد يومياً =====
+function tick(){const n=Date.now(),o=3*36e5,e=Math.ceil((n+o)/864e5)*864e5-o,s=Math.max(0,Math.floor((e-n)/1e3));
+ const p=x=>String(x).padStart(2,'0');document.getElementById('t').textContent=p(s/3600|0)+':'+p(s%3600/60|0)+':'+p(s%60)}
+tick();setInterval(tick,1000);
+
+const f=document.getElementById('f'),err=document.getElementById('err'),prices={1:180,2:270};
+f.addEventListener('change',()=>{document.getElementById('tot').textContent=prices[f.pkg.value]+' ر.س'});
+
+function normPhone(v){v=v.replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/\D/g,'');
+ if(v.startsWith('00966'))v=v.slice(5);else if(v.startsWith('966'))v=v.slice(3);
+ if(v.startsWith('0'))v=v.slice(1);return /^5\d{8}$/.test(v)?'0'+v:null}
+
+f.addEventListener('submit',async e=>{
+ e.preventDefault();err.textContent='';
+ const name=f.name.value.trim(),phone=normPhone(f.phone.value),city=f.city.value,address=f.address.value.trim();
+ if(name.length<2)return err.textContent='اكتب اسمك';
+ if(!phone)return err.textContent='رقم الجوال غير صحيح، مثال: 0512345678';
+ if(!city)return err.textContent='اختر المدينة';
+ if(address.length<5)return err.textContent='اكتب العنوان بالتفصيل';
+ const b=document.getElementById('go');b.disabled=true;b.textContent='جاري الإرسال...';
+ try{
+  const r=await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({name,phone,city,address,pkg:f.pkg.value,total:prices[f.pkg.value],website:f.website.value})});
+  if(!r.ok)throw 0;
+  if(window.fbq)fbq('track','Purchase',{value:prices[f.pkg.value],currency:'SAR'});
+  f.style.display='none';document.getElementById('ok').style.display='block';
+ }catch(x){err.textContent='صار خطأ، حاول مرة ثانية';b.disabled=false;b.textContent='تأكيد الطلب'}
+});
+</script>
+</body>
+</html>
